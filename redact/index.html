@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-редактор — CodeBook.ua</title>
+    <link rel="stylesheet" href="style/editor.css">
+</head>
+<body>
+    <header class="editor-header">
+        <a class="logo" href="../index.html">CodeBook<span>.ua</span></a>
+        <div class="editor-title">Онлайн-редактор</div>
+        <button class="run-button" id="run" type="button">Запустити ▶</button>
+    </header>
+    <main class="editor-layout">
+        <section class="workspace" aria-label="Редактор коду">
+            <div class="tab-list" role="tablist" aria-label="Мова коду">
+                <button class="tab active" id="tab-html" type="button" role="tab" aria-selected="true" aria-controls="panel-html" data-tab="html">HTML</button>
+                <button class="tab" id="tab-css" type="button" role="tab" aria-selected="false" aria-controls="panel-css" data-tab="css">CSS</button>
+                <button class="tab" id="tab-js" type="button" role="tab" aria-selected="false" aria-controls="panel-js" data-tab="js">JavaScript</button>
+                <button class="reset-button" id="reset" type="button" title="Відновити початковий приклад">Скинути</button>
+            </div>
+            <div class="editor-panel" id="panel-html" role="tabpanel" aria-labelledby="tab-html" data-panel="html">
+                <label for="editor-html">HTML-код</label>
+                <textarea id="editor-html" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+            </div>
+            <div class="editor-panel" id="panel-css" role="tabpanel" aria-labelledby="tab-css" data-panel="css" hidden>
+                <label for="editor-css">CSS-стилі</label>
+                <textarea id="editor-css" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+            </div>
+            <div class="editor-panel" id="panel-js" role="tabpanel" aria-labelledby="tab-js" data-panel="js" hidden>
+                <label for="editor-js">JavaScript-код</label>
+                <textarea id="editor-js" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+            </div>
+            <div class="console-panel">
+                <div class="console-heading">Консоль <span id="status" role="status">Готово</span></div>
+                <pre id="console-output" aria-live="polite"></pre>
+            </div>
+        </section>
+        <section class="preview-panel" aria-label="Попередній перегляд">
+            <div class="preview-heading">Попередній перегляд</div>
+            <iframe id="preview" title="Результат виконання коду" sandbox="allow-scripts"></iframe>
+        </section>
+    </main>
+    <script src="editor.js"></script>
+</body>
+</html>
