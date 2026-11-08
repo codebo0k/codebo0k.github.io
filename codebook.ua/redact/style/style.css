@@ -1,0 +1,130 @@
+/* --- Стилі для Головної сторінки --- */
+
+/* Привітальний баннер */
+.hero-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #10b981;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+}
+
+.btn-secondary {
+    background-color: #334155;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #475569;
+}
+
+/* Сітка з картками напрямків */
+.cards-grid {
+    display: flex;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.course-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+}
+
+.card-icon {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.card-link {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивність для мобілок */
+@media (max-width: 768px) {
+    .cards-grid {
+        flex-direction: column;
+    }
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
