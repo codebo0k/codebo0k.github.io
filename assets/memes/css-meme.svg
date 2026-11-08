@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ще два пікселі</title>
+  <desc id="desc">Жартівлива ілюстрація розробника, який вирівнює картку та просить посунути її ще на два пікселі.</desc>
+  <rect width="720" height="300" rx="24" fill="#eff6ff"/>
+  <rect x="42" y="48" width="330" height="204" rx="18" fill="#fff" stroke="#bfdbfe" stroke-width="4"/>
+  <rect x="112" y="108" width="190" height="86" rx="14" fill="#d1fae5" stroke="#10b981" stroke-width="4"/>
+  <path d="M90 95h222M90 207h222" stroke="#93c5fd" stroke-dasharray="8 8" stroke-width="3"/>
+  <text x="207" y="146" text-anchor="middle" fill="#065f46" font-family="Arial,sans-serif" font-size="20" font-weight="700">КАРТКА</text>
+  <text x="207" y="174" text-anchor="middle" fill="#334155" font-family="Arial,sans-serif" font-size="16">майже по центру</text>
+  <text x="415" y="120" font-size="68">🧑‍🎨</text>
+  <path d="M495 142h42" stroke="#64748b" stroke-linecap="round" stroke-width="5"/>
+  <rect x="532" y="83" width="150" height="91" rx="15" fill="#1e293b"/>
+  <path d="M532 174l-15 18v-18" fill="#1e293b"/>
+  <text x="607" y="120" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="17">Ще два</text>
+  <text x="607" y="148" text-anchor="middle" fill="#a7f3d0" font-family="Arial,sans-serif" font-size="20" font-weight="700">пікселі!</text>
+  <text x="443" y="234" fill="#475569" font-family="Arial,sans-serif" font-size="19">і точно готово 😅</text>
+</svg>
